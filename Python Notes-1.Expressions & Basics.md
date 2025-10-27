@@ -124,7 +124,7 @@ print("Sum =", 2 + 3)
   `**` → `* / // %` → `+ -`  
   ➤ Use parentheses `()` for clarity.
 
-## 📘 Extended Reading: Modulo — Why It’s Useful  
+#📘 Extended Reading: Modulo — Why It’s Useful  
 （剰余の使いどころ／取餘運算的應用）
 ### Why `%` Is Useful
 The modulo operator returns the remainder after division.  
@@ -185,10 +185,10 @@ while b != 0:
 print(a)
 ```
 
-## 📘 Extended Reading 2: Order of Evaluation & I/O  （演算の優先順位と入力／出力）
+# 📘 Extended Reading 2: Order of Evaluation & I/O  （演算の優先順位と入力／出力）
 
-## - Order of Evaluation (Precedence)
----
+## 🐑 Order of Evaluation (Precedence)
+
 
 here’s how Python decides *who goes first* in a calculation.  
 Think of it like a tiny math drama — parentheses get VIP access, everyone else waits in line.
@@ -208,7 +208,6 @@ When operators share the same level, Python reads them left to right. Simple.
 同じレベルの演算子は **左から右へ** 処理されます。  
 同一層級的運算符是「從左到右」處理。
 
----
 
 ## 🧮 Conversions — `int()`, `float()`
 
