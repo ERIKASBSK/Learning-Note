@@ -61,6 +61,9 @@ if x > 10:
 else:
     print("Small")
 ```
+
+---
+
 ### 5️⃣ Multi-way Decisions — elif （複数分岐／多條件判斷）
 
 elif = “else + if” → for multiple choices.
@@ -78,7 +81,10 @@ elif x < 10:
     print("Medium")
 else:
     print("Large")
-``` 
+```
+
+---
+
 ### 6️⃣ Common Pitfall （ありがち失敗／常見坑）    
 Putting x < 20 before x < 10 causes smaller numbers to match early and skip the rest.
 一度マッチしたブロックがあれば、その下は実行されません。条件の順序に注意。    
@@ -89,4 +95,5 @@ if x < 20:      # ← catches everything below 20
     ...
 elif x < 10:    # ← never reached
     ...
-``` 
+```
+---
