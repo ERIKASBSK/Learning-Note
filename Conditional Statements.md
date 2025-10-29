@@ -31,8 +31,7 @@ Python 不用 `{}`，而是靠縮排（通常 4 個空格）。
 
 ---
 
-### 3️⃣ Comparison Operators  
-（比較演算子／比較運算子）
+### 3️⃣ Comparison Operators  （比較演算子／比較運算子）
 
 | Symbol | English | 日本語 | 中文 |
 |:--:|:--|:--|:--|
