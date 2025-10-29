@@ -45,9 +45,18 @@ Task 1 寫作改法(Chatgpt)
 
 | **Your Original Sentence**                                                                                                                                                                                    | **Upgraded Band 8 Version**                                                                                                                                                                             |
 | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| On the other hand, although men has the biggest figure on having post graduate diploma, indicating to an erroneous assumption that men has less interest than women for extent their academic career further. | Furthermore, men also had slightly higher proportions in postgraduate diplomas (70%) and master’s degrees, indicating that they were more likely than women to pursue advanced academic qualifications. |
-| But the fact was the men who held master still had the relatively higher rate than women.                                                                                                                     | In fact, men who held a master’s degree still outnumbered their female counterparts.                                                                                                                    |
+| On the other hand, although men has the biggest figure on having post graduate diploma, indicating to an erroneous assumption that men has less interest than women for extent their academic career further. | ***Furthermore***, men also ***had slightly higher proportions in*** postgraduate diplomas (70%) and master’s degrees, indicating that they were more likely than women to pursue advanced academic qualifications. |
+| But the fact was the men who held master still had the relatively higher rate than women.                                                                                                                     | In fact, men who held a master’s degree ***still outnumbered*** their female ***counterparts***.                                                                                                                    |
 | As a result, the academy was still in charge by male beings.                                                                                                                                                  | As a result, higher education in Australia was still dominated by men.                                                                                                                                  |
+
+
+
+🔍 Grammar Notes:  
+“In fact,” → 用於補充強調。  
+“who held a master’s degree” → 關係子句修飾 men。  
+“outnumbered their female counterparts” → Task 1 常見學術說法；counterparts = 「對應群體」。  
+“As a result,” → 表結論結果。  
+“was dominated by …” → 被動語態，用於描述趨勢或現象  
 
 ---
 
