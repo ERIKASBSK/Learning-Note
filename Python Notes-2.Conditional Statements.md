@@ -1,4 +1,4 @@
-## ⚖️ Conditional Statements  
+## ⚖️ Python Notes-2 Conditional Statements  
 （条件付き実行／條件式執行）
 
 ---
