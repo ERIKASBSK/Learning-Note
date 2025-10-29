@@ -1,6 +1,6 @@
 Task 1 寫作改法(Chatgpt)
 ## 📘 IELTS Writing Task 1 — Parallel Reading (Band 6 → Band 8 Upgrade)
-<img width="1130" height="1371" alt="image" src="https://github.com/user-attachments/assets/525b0f36-f5a0-492f-bddd-484de36c0fba" />
+<img width="500" height="700" alt="image" src="https://github.com/user-attachments/assets/525b0f36-f5a0-492f-bddd-484de36c0fba" />
 
 ---
 
@@ -9,17 +9,7 @@ Task 1 寫作改法(Chatgpt)
 
 | **Your Original Sentence**                                                                                                              | **Upgraded Band 8 Version**                                                                                                                                               |
 | --------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| Overall, men which held the skilled vocational diploma has the highest rate, at about 85%, was the most prevalent among all the figure. | Overall, men dominated most categories of post-school education, particularly in skilled vocational diplomas, while women outnumbered men only in undergraduate diplomas. |
-
----
-
-### 🧩 Body Paragraph 1
-
-| **Your Original Sentence**                                                                                                                                                                                                    | **Upgraded Band 8 Version**                                                                                                                                                                                                              |
-| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| The second largest was recorded among women who held undergraduate diploma (70%) , followed by men who held postgraduate diploma(70%), which represented owning an bachelor degree wasn’t a crucial thing in Australia, 1999. | The second largest proportion was among women holding an undergraduate diploma (70%), followed by men with a postgraduate diploma (70%). This shows that holding a bachelor’s degree was comparatively less common in Australia in 1999. |
-| Despite the highest proportions, women who held skilled vocational represented the most marginal absolute count.                                                                                                              | Despite these high figures for men, women holding skilled vocational diplomas accounted for the smallest proportion overall.                                                                                                             |
-| This suggests that women lending to not training hand on skills or practicing for a specific career or profession.                                                                                                            | This suggests that women were less likely to pursue hands-on or practical training for specific careers or professions.                                                                                                                  |
+| Overall, men which held the skilled vocational diploma has the highest rate, at about 85%, was the most prevalent among all the figure. | Overall, men ***dominated*** most categories of post-school education, ***particularly in*** skilled vocational diplomas, ***while*** women ***outnumbered*** men only in undergraduate diplomas. |
 
 
 🔍 Grammar Notes:
@@ -29,6 +19,25 @@ Task 1 寫作改法(Chatgpt)
 “particularly in …” → 副詞用法，指出最突出的類別。  
 “while + clause” → 對比連詞，形成對稱句。  
 “outnumbered” → 動詞 outnumber + object = 「數量超過」。  
+
+---
+
+### 🧩 Body Paragraph 1
+
+| **Your Original Sentence**                                                                                                                                                                                                    | **Upgraded Band 8 Version**                                                                                                                                                                                                              |
+| ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| The second largest was recorded among women who held undergraduate diploma (70%) , followed by men who held postgraduate diploma(70%), which represented owning an bachelor degree wasn’t a crucial thing in Australia, 1999. | ***The second largest proportion*** was ***among*** women holding an undergraduate diploma (70%), followed by men with a postgraduate diploma (70%). This shows that holding a bachelor’s degree was ***comparatively less common*** in Australia in 1999. |
+| Despite the highest proportions, women who held skilled vocational represented the most marginal absolute count.                                                                                                              | Despite these high figures for men, women ***holding*** skilled vocational diplomas ***accounted for*** the smallest proportion overall.                                                                                                             |
+| This suggests that women lending to not training hand on skills or practicing for a specific career or profession.                                                                                                            | This suggests that women ***were less likely to*** pursue hands-on or practical training for specific careers or professions.                                                                                                                  |
+
+🔍 Grammar Notes:
+
+“the second largest proportion” → 固定搭配，「第二大比例」。  
+“among + group” → 表示「在……之中」。  
+“holding …” → 分詞短語修飾 women；比 who held 更簡潔。  
+“followed by …” → IELTS 常用倒裝分詞結構，等於 and it was followed by …。  
+“comparatively less common” → 副詞 comparatively = 「相對而言」，自然的學術語氣。  
+
 
 ---
 
