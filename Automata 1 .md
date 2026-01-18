@@ -1,5 +1,5 @@
 
-# Note 1 — Theory of Computation = what computers *can* do
+# Note 1 — Theory of Computation = what computers can do
 
 <img width="1536" height="1024" alt="image" src="https://github.com/user-attachments/assets/957c7a5c-1d32-4469-8844-84f5a3ad2c2b" />
 
