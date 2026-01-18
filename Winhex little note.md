@@ -1,52 +1,41 @@
 # WinHex / x86 筆記：NOP、EIP 是什麼？
 
 ## WinHex
-- **Hex（十六進位）**：檔案的原始 bytes  
-  **Hex**: raw bytes of the file
-- **Offset（位移/位置）**：每個 byte 在檔案中的座標  
-  **Offset**: the position/address of a byte in the file
-- **ASCII 欄**：把 bytes 當成文字硬顯示（多半是亂碼）  
-  **ASCII column**: bytes interpreted as text (often gibberish)
+- **Hex（十六進位）**：檔案的原始 bytes  raw bytes of the file
+- **Offset（位移/位置）**：每個 byte 在檔案中的座標  the position/address of a byte in the file
+- **ASCII 欄**：把 bytes 當成文字硬顯示（多半是亂碼）   bytes interpreted as text (often gibberish)
 
 ---
 
 ## 1) What is NOP?
 - **NOP = No Operation（不做任何事）**  
-  **NOP = No Operation** (does nothing)
-- CPU 會「執行它」，但沒有任何效果，只是往下一條走  
-  CPU executes it, but it has no effect—just moves on
+- CPU 會「執行它」，但沒有任何效果，只是往下一條走   CPU executes it, but it has no effect—just moves on
 
 ###  Common NOP byte
 - **x86 單一 NOP**：`90`  
-  **x86 single-byte NOP**: `90`
+
 
 ###  NOP
 - **填充/對齊（padding / alignment）**  
-  **Padding / alignment**
 - **編譯器留空位（reserved space）**  
   **Compiler leaves reserved space**
-- 你會看到一長串：`90 90 90 90 ...`  
-  You’ll often see long runs like: `90 90 90 90 ...`
+- You’ll often see long runs like: `90 90 90 90 ...`
 
 ---
 
 ## EIP?
 - **EIP = Instruction Pointer（指令指標）**  
-  **EIP = Instruction Pointer**
 - 意思是：CPU「下一條要執行」的指令位址  
   It tells the CPU the address of the **next instruction** to execute
 
 ### 32-bit / 64-bit 差別 / 32-bit vs 64-bit
 - **32-bit：EIP**  
-  **32-bit: EIP**
-- **64-bit：RIP**（同概念，只是更大）  
-  **64-bit: RIP** (same concept, larger register)
+- **64-bit: RIP** (same concept, larger register)
 
 ---
 
 ## 3)  Common CPU registers
-> 暫存器＝CPU 內建的超高速小變數  
-> Registers = tiny ultra-fast variables inside the CPU
+> 暫存器＝CPU 內建的超高速小變數  Registers = tiny ultra-fast variables inside the CPU
 
 | Register | 中文 | English intuition |
 |---|---|---|
@@ -62,8 +51,7 @@
 ---
 
 ## 4) EFLAGS（旗標）/ EFLAGS (status flags)
-> 很多跳轉（JZ/JNZ）就是看旗標  
-> Many branches (JZ/JNZ) depend on these flags
+> 很多跳轉（JZ/JNZ）就是看旗標  Many branches (JZ/JNZ) depend on these flags
 
 | Flag | 中文 | English |
 |---|---|---|
