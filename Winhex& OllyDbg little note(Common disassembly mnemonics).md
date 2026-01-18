@@ -1,4 +1,4 @@
-# WinHex / x86 筆記：NOP、EIP 是什麼？
+# WinHex / OllyDbg x86 筆記：NOP、EIP 是什麼？
 
 ## WinHex
 - **Hex（十六進位）**：檔案的原始 bytes  raw bytes of the file
