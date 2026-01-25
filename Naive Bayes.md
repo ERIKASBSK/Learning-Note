@@ -100,9 +100,10 @@ Positive
 
 # Note 2 Laplacian smoothing
 
-- **add 1 to every word first** (pretend it appears at least once) so the probability **won’t become 0**.
+**add 1 to every word first** (pretend it appears at least once) so the probability **won’t become 0**. 
+ラプラス平滑化（Laplacian / Laplace smoothing）は、ピエール＝シモン・ラプラスに由来する名前です（「加算1」の考え方＝ラプラスの継起の法則に関連）。 
+平滑化とは、出現回数が0の単語でも小さな確率を与えてゼロ確率をなくすことを指し、文章全体の確率が0になってしまうのを防ぎます。 
 
-### Why smoothing is needed
 If a word never appears in a class (count = 0), then its probability becomes **0**.  
 When scoring a tweet, multiplying by 0 makes the whole score **collapse to 0**.
 
@@ -120,7 +121,7 @@ P(w\mid pos)=\frac{count_{pos}(w)+1}{N_{pos}+|V|},\quad
 P(w\mid neg)=\frac{count_{neg}(w)+1}{N_{neg}+|V|}
 $$
 
-### Example (from the video)
+### Example
 Given:
 
 $$ - \(N_{pos}=13\), \(N_{neg}=12\), \(V=8\) $$ 
@@ -140,6 +141,20 @@ For **because** in negative (count = 0):
 $$
 P(because\mid neg)=\frac{0+1}{12+8}=\frac{1}{20}=0.05
 $$
+
+```py
+A, B = 13, 8
+count = 0
+
+print(count / A)
+print((count + 1) / (A + B))
+
+```
+Result
+```
+0.0
+0.047619047619047616
+```
 
 ---
 
