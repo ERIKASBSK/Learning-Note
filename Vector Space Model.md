@@ -209,41 +209,135 @@ Result
 3.0
 ```
 
-## 6) Cosine similarity
+## 6) Cosine similarity （コサイン類似度）
 Once everything is a vector, similarity becomes geometry:
-
-- vectors close → distribution is similar → meaning/topic is similar
-
-Two standard metrics:
-
-### (1) Cosine similarity (angle-based)
-
-$$
-\[
-\cos(\theta)=\frac{\vec a \cdot \vec b}{\|\vec a\|\;\|\vec b\|}
-\]
-$$
-
-
-### Python (cosine similarity)
-```python
-def cosine(a, b, eps=1e-12):
-    a = a.astype(float)
-    b = b.astype(float)
-    return float(a @ b / ((np.linalg.norm(a)+eps) * (np.linalg.norm(b)+eps)))
-
-cosine(M[word2id["data"]], M[word2id["simple"]])
-```
 <img width="924" height="349" alt="image" src="https://github.com/user-attachments/assets/77049424-808e-4cb4-9505-cd2261b6703d" />
+### Difference 
+- **Euclidean distance（ユークリッド距離）** = straight-line distance（距離） between two **vectors（ベクトル）** → sensitive to **magnitude（大きさ）** / document length.    
+- **Cosine similarity（コサイン類似度）** = similarity（類似度） based on the **angle（角度）** between two **vectors** → focuses on direction（方向） / ratio, not size.    
 
-### (2) Euclidean distance (distance-based)
+---
 
-$$
-\[
-d(\vec a,\vec b)=\sqrt{\sum_i (a_i-b_i)^2}
-\]
-$$
+### Formulas
+#### Euclidean distance（ユークリッド距離）
+~~~math
+d(x,y)=\|x-y\|_2=\sqrt{\sum_i (x_i-y_i)^2}
+~~~
 
+#### Cosine similarity（コサイン類似度）
+~~~math
+\cos(x,y)=\frac{x\cdot y}{\|x\|\|y\|}
+~~~
+
+Where:
+- $\(x\cdot y\)$ is the **dot product（内積）**
+- $\(\|x\|\)$ is the **norm（ノルム）** (often **L2 norm（L2ノルム）**)
+
+---
+
+## Why Euclidean distance can be misleading
+If two document vectors differ mainly by length, one can be a scaled version of the other:
+~~~math
+x = k y \quad (k>0)
+~~~
+- **Cosine similarity（コサイン類似度）** stays high (same direction → similar distribution).
+- **Euclidean distance（ユークリッド距離）** can become large (because magnitude（大きさ） differs).
+
+---
+
+## Example (word-count vectors)
+
+* Food $(Food=(5,15))$
+* Agriculture $(Agriculture=(20,40))$
+* History $(History=(30,20))$
+
+---
+
+```math
+\text{Euclidean distance: } d(u,v)=\sqrt{(u_1-v_1)^2+(u_2-v_2)^2}
+```
+
+```math
+d(Food,Agriculture)=\sqrt{(5-20)^2+(15-40)^2}
+=\sqrt{15^2+25^2}
+=\sqrt{850}\approx 29.1548
+```
+
+```math
+d(Agriculture,History)=\sqrt{(20-30)^2+(40-20)^2}
+=\sqrt{(-10)^2+20^2}
+=\sqrt{500}\approx 22.3607
+```
+
+Euclidean conclusion: (d(Agriculture,History) < d(Food,Agriculture)) → **Agriculture and History look “closer”**.
+
+---
+
+```math
+\text{Cosine similarity: } \cos(u,v)=\frac{u\cdot v}{\lVert u\rVert \lVert v\rVert}
+```
+
+```math
+Food\cdot Agriculture = 5\cdot 20 + 15\cdot 40 = 700
+```
+
+```math
+\lVert Food\rVert=\sqrt{5^2+15^2}=\sqrt{250},\quad
+\lVert Agriculture\rVert=\sqrt{20^2+40^2}=\sqrt{2000}
+```
+
+```math
+\cos(Food,Agriculture)=\frac{700}{\sqrt{250}\sqrt{2000}}\approx 0.9899
+```
+
+```math
+Agriculture\cdot History = 20\cdot 30 + 40\cdot 20 = 1400
+```
+
+```math
+\lVert History\rVert=\sqrt{30^2+20^2}=\sqrt{1300}
+```
+
+```math
+\cos(Agriculture,History)=\frac{1400}{\sqrt{2000}\sqrt{1300}}\approx 0.8682
+```
+
+Cosine conclusion: $( \cos(Food,Agriculture) > \cos(Agriculture,History))$ →     
+**Food and Agriculture are “more similar”**     
+they point in a more similar direction / proportion
+
+---
+
+```python
+import numpy as np
+
+Food = np.array([5, 15])
+Agriculture = np.array([20, 40])
+History = np.array([30, 20])
+
+def euclid(u, v):
+    return np.linalg.norm(u - v)
+
+def cosine(u, v):
+    return (u @ v) / (np.linalg.norm(u) * np.linalg.norm(v))
+
+print("Euclid d(Food,Agriculture) =", euclid(F, A))
+print("Euclid d(Agriculture,History) =", euclid(A, H))
+print("Cos   cos(Food,Agriculture) =", cosine(F, A))
+print("Cos   cos(Agriculture,History) =", cosine(A, H))
+```
+Result
+```
+Euclid d(Food,Agriculture) = 29.154759474226502
+Euclid d(Agriculture,History) = 22.360679774997898
+Cos   cos(Food,Agriculture) = 0.9899494936611665
+Cos   cos(Agriculture,History) = 0.8682431421244591
+```
+
+Expected key numbers:
+
+* (d(F,A)\approx 29.1548), (d(A,H)\approx 22.3607)
+* (\cos(F,A)\approx 0.9899), (\cos(A,H)\approx 0.8682)
 
 ---
 
