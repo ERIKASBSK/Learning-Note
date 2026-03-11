@@ -1,4 +1,64 @@
 # Proposition 1
+### 1. Proposition
+
+
+1. A Proposition has to be a declarative sentence. It has to be either ***True*** or ***False***. 
+2. A proposition is not necessarily true 
+
+---
+
+Sample 1
+- "Toronto is the capital of Canada."
+  *this is a false proposition, but it is still a proposition.
+
+---
+
+Sample 2
+- 1 + 1 = 2 
+  A true proposition.
+
+---
+
+Sample 3
+- What time is it
+  Non-Proposition
+
+- x + 1 = 2
+  Until the value of x is known, its truth or falsity cannot be determined.Non-Proposition)
+
+---
+### 2.Variables & Truth Values
+
+- Truth Value
+1.If a proposition is true, it is denoted as T. 
+  If a proposition is false, it is denoted as F.
+  
+- Propositional Variables
+1.Propositions are usually denoted by lowercase italic letters, like $p, q, r, s$.
+
+---
+
+### 3.Atomic Proposition
+
+A statement that cannot be decomposed into simpler ones.  
+Example: $p$: "It is raining."
+
+---
+
+### 4.Compound Propositions
+
+A statement formed by combining two or more atomic propositions using logical connectives (e.g., AND, OR, NOT). 
+Example: $p \land q$: "It is raining and I am wet."
+
+### 5.Operators
+
+#### 1.Negation 
+
+
+$\neg$
+"Not $p$"
+
+
 
 ### 1. What those symbols mean
 
